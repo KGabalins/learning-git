@@ -11,8 +11,6 @@ public class Dog{
 	public Dog(String name, int age){
 		myName = name;
 		myAge = age;
-		// Need to make a random generator that chooses a random breed
-
 		myBreed = myBreeds[myRandom.nextInt(myBreeds.length)];
 	}
 
