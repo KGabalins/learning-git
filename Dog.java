@@ -6,7 +6,7 @@ public class Dog{
 	private String myBreed;
 	private Random myRandom = new Random();
 	private String[] myBreeds = {"Bulldog", "German Shepherd", "Siberian Husky", "Golden Retriever",
-								 "Boxer", "Poodle"};
+								 "Boxer", "Poodle", "French Bulldog"};
 
 	public Dog(String name, int age){
 		myName = name;
