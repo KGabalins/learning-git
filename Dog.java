@@ -2,11 +2,13 @@ public class Dog{
 	private String myName;
 	private int myAge;
 	private String myBreed;
+	private String[] myBreeds = {"Bulldog", "German Shepherd", "Siberian Husky", "Golden Retriever",
+                                                                 "Boxer", "Poodle", "French Bulldog"};
+
 
 	public Dog(String name, int age){
 		myName = name;
 		myAge = age;
-		// Need to make a random generator that chooses a random breed
 		myBreed = "Bulldog";
 	}
 
