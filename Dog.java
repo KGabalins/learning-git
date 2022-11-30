@@ -1,15 +1,17 @@
+import java.util.Random;
+
 public class Dog{
 	private String myName;
 	private int myAge;
 	private String myBreed;
+	private Random myRandom = new Random();
 	private String[] myBreeds = {"Bulldog", "German Shepherd", "Siberian Husky", "Golden Retriever",
-                                                                 "Boxer", "Poodle", "French Bulldog"};
-
+								 "Boxer", "Poodle", "French Bulldog"};
 
 	public Dog(String name, int age){
 		myName = name;
 		myAge = age;
-		myBreed = "Bulldog";
+		myBreed = myBreeds[myRandom.nextInt(myBreeds.length)];
 	}
 
 	public void bark(){
